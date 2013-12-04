@@ -9,7 +9,6 @@ module.exports = function (grunt) {
     var done = this.async();
     var wow  = wowserify();
 
-    console.log(arguments);
     console.log(options);
     console.log(this.files);
     done();

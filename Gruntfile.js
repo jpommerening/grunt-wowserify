@@ -28,10 +28,20 @@ module.exports = function (grunt) {
           sourceMap: true
         }
       }
+    },
+    mochacli: {
+      options: {
+        require: ['should'],
+        ui: 'bdd'
+      },
+      test: {
+        src: ['test/*.js']
+      }
     }
   });
 
   grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-mocha-cli');
 
   grunt.registerTask('default', ['wowserify']);
 
