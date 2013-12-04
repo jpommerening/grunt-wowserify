@@ -1,6 +1,6 @@
 # wowserify
 
-> wow. the browserify. very umd. much grunt.
+![wow. the browserify. very umd. much grunt.](media/doge.png)
 
 ## What?
 
