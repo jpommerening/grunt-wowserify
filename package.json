@@ -1,0 +1,42 @@
+{
+  "name": "grunt-wowserify",
+  "version": "0.1.0-alpha",
+  "description": "wow. the browserify. very umd. such uglify. much grunt.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jpommerening/grunt-browserify.git"
+  },
+  "author": {
+    "name": "Jonas Pommerening",
+    "email": "jonas.pommerening@gmail.com",
+    "url": "https://npmjs.org/~jpommerening"
+  },
+  "bugs": {
+    "url": "http://github.com/jpommerening/grunt-browserify/issues"
+  },
+  "main": "Gruntfile.js",
+  "bin": {
+    "wowserify": "bin/wowserify"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "through": "~2.3.4",
+    "uglify-js": "~2.4.6",
+    "browserify": "~2.36.1",
+    "source-map": "~0.1.31",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.10",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha": "~0.4.6",
+    "grunt-mocha-cli": "~1.3.0",
+    "grunt-notify": "~0.2.16",
+    "should": "~2.1.0",
+    "mocha": "~1.14.0"
+  }
+}
