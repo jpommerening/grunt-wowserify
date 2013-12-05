@@ -7,10 +7,15 @@ module.exports = function (grunt) {
     });
 
     var done = this.async();
-    var wow  = wowserify();
+    var wow  = wowserify(this.files.src);
+
+    wow.require('./' + options.main);
 
     console.log(options);
     console.log(this.files);
-    done();
+
+    var p = wow.bundle();
+    p.pipe(process.stdout);
+    p.on('end', done);
   });
 };
