@@ -18,6 +18,7 @@ module.exports = function (grunt) {
         src: [],
         dest: 'dist/<%= pkg.name %>.min.js',
         options: {
+          debug: true,
           sourceMap: 'dist/<%= pkg.name %>.min.js.map'
         }
       },

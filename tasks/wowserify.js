@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     console.log(options);
     console.log(this.files);
 
-    var p = wow.bundle();
+    var p = wow.bundle({debug: options.debug});
     p.pipe(process.stdout);
     p.on('end', done);
   });
